@@ -36,6 +36,9 @@ document.querySelector("#scraperBtn").addEventListener("click", async () => {
         <img src=${product.image} alt="${product.title}"/>
         <div class="productInfo">
           <h3>${product.title}</h3>
+          <p><strong>$ ${product.price}</strong></p>
+          <p>Rating: ${product.rating} ⭐</p>
+          <p>${product.reviews} reviews</p>
         </div>
         `;
         // clean warning
