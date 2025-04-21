@@ -11,7 +11,7 @@ export const scrapeAmazon = async (req: Request, res: Response) => {
 
   try {
     const data = await getScrapeData(keyword as string);
-    res.json(data);
+    res.status(200).json(data);
   } catch (error) {
     console.error("Scraping error");
     res.status(500).json({ error: "Falied to scrape Amazon" });
