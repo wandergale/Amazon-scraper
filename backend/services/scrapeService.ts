@@ -1,7 +1,7 @@
 import axios from "axios";
 import { JSDOM } from "jsdom";
 
-const getScrapeData = async (keyword: string) => {
+export const getScrapeData = async (keyword: string) => {
   // url to search on amazon
   const url = `http://www.amazon.com/s?k=${encodeURIComponent(keyword)}`;
 
@@ -35,5 +35,3 @@ const getScrapeData = async (keyword: string) => {
 
   return items;
 };
-
-module.exports = getScrapeData;
