@@ -1,7 +1,7 @@
 # ♻ Amazon Scraper - Fullstack project
 This is a fullstack project for scraping amazon products using a keyword. <br/>
-It include a backend build with **Bun** + **Typescript** + **Express** + **JSDOM**, and a <br/>
-frontend build with **Vite** (**Vanilla JS, Javascript, HTML, CSS**).
+It include a backend build with **Bun** + **Typescript + Axios + Express + JSDOM**, and a <br/>
+frontend build with **Vite + Vanilla + Javascript + HTML + CSS**.
 
 ## 📁 Struture
 `backend/` &rarr; API for scraping Amazon search results <br/>
