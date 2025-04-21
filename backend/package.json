@@ -4,13 +4,16 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/node": "^22.14.1"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@types/express": "^5.0.1",
     "axios": "^1.8.4",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "jsdom": "^26.1.0"
   }
