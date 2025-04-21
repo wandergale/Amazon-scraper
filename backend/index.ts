@@ -1,11 +1,18 @@
 import express from "express";
 import dotenv from "dotenv";
 import scrapeRoutes from "./routes/scrapeRoutes";
+import cors from "cors";
 
 dotenv.config();
+const PORT = process.env.PORT;
 
 const app = express();
-const PORT = process.env.PORT;
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    methods: "GET",
+  })
+);
 
 app.use("/api", scrapeRoutes);
 
