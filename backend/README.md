@@ -1,4 +1,4 @@
-# Backend - Amazon Scraper
+# 👨‍💻 Backend - Amazon Scraper
 
 ## 🛠 Technologies used
 * [Bun](https://bun.sh)
