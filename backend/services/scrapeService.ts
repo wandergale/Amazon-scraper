@@ -25,6 +25,15 @@ export const getScrapeData = async (keyword: string) => {
   productsEls.forEach((el) => {
     const title = el.querySelector("h2 span")?.textContent?.trim();
     const rating = el.querySelector(".a-icon-alt")?.textContent?.split(" ")[0];
+    const priceWhole =
+      el.querySelector(".a-price-whole")?.textContent?.replace(/[.,]/g, "") ||
+      "";
+    const priceFraction =
+      el
+        .querySelector(".a-price-fraction")
+        ?.textContent?.replace(/[^\d]/g, "") || "";
+    const price =
+      priceWhole && priceFraction ? `${priceWhole}.${priceFraction}` : null;
     const reviews = el
       .querySelector(".a-size-base.s-underline-text")
       ?.textContent?.trim();
@@ -35,6 +44,7 @@ export const getScrapeData = async (keyword: string) => {
         title,
         rating: rating || "N/A",
         reviews: reviews || "0",
+        price,
         image,
       });
     }
