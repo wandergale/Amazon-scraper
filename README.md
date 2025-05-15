@@ -8,11 +8,11 @@ frontend build with **Vite + Vanilla + Javascript + HTML + CSS**.
 `frontend/` &rarr; Web interface to search and display results
 
 ## 🏆 Features
-🔍 Search for products on Amazon by keyword<br/>
-🛒 Display product title, price, rating, number of reviews, image and link<br/>
-⚙️ Scraping handled via backend using `axios` + `JSDOM`<br/>
-🙌 AJAX call from frontend to backend<br/>
-🌱 Clean UI styled with Amazon-inspired colors
+- Search for products on Amazon by keyword<br/>
+- Display product title, price, rating, number of reviews, image and link<br/>
+- Scraping handled via backend using `axios` + `JSDOM`<br/>
+- AJAX call from frontend to backend<br/>
+- Clean UI styled with Amazon-inspired colors
 
 ## ⭐ Technologies
 ### Backend:
